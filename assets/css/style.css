@@ -1,0 +1,206 @@
+.navbar {
+  background-color: #420516;
+}
+.navbar .container-fluid .navbar-toggler-icon {
+  color: #ffffff;
+}
+.navbar .container-fluid .navbar-brand {
+  color: #ffffff;
+}
+.navbar .container-fluid .navbar-brand {
+  color: #ffffff;
+}
+.navbar .container-fluid .collapse .navbar-nav .nav-item:hover {
+  background-color: #FB9300;
+  border-radius: 10px;
+}
+.navbar .container-fluid .collapse .navbar-nav .nav-item {
+  padding: 10px;
+  border-radius: 10px;
+  transition-property: background;
+  transition-duration: 1s;
+}
+.navbar .container-fluid .collapse .navbar-nav .nav-item .nav-link {
+  color: #ffffff;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  flex-wrap: wrap;
+}
+.cards .card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  padding: 10px;
+  transition-property: all;
+  transition-duration: 1s;
+  cursor: pointer;
+}
+.cards .card p {
+  text-align: center;
+}
+.cards .card:hover {
+  background-color: #420516;
+}
+.cards .card:hover p {
+  color: #ffffff;
+}
+
+.ventaja {
+  background-color: #0A1D37;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+  box-shadow: 15px 4px 15px #212121;
+}
+.ventaja .ventajas {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  padding: 40px;
+  transition: all 1s;
+}
+.ventaja .ventajas h3 {
+  color: #ffffff;
+}
+.ventaja .ventajas p {
+  color: #ffffff;
+}
+
+@media screen and (max-width: 980px) {
+  .ventaja {
+    background-color: #0A1D37;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+  }
+  .ventaja .ventajas {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    padding: 40px;
+    transition: all 1s;
+  }
+  .ventaja .ventajas h3 {
+    color: #ffffff;
+  }
+  .ventaja .ventajas p {
+    color: #ffffff;
+  }
+}
+.baner {
+  display: flex;
+  flex-direction: row-reverse;
+  background-color: #420516;
+  width: 100%;
+  height: 200px;
+}
+.baner .redes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  color: #ffffff;
+  gap: 10px;
+}
+.baner .redes a i {
+  color: #ffffff;
+}
+.baner .redes a i:hover {
+  color: #FB9300;
+}
+.baner .direccion {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+}
+.baner .direccion i {
+  margin: 10px;
+}
+
+.botones {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.botones .btn, .botones .btn-primario {
+  padding: 5px 15px;
+  border: 0;
+  border-radius: 0;
+  margin: 8px;
+}
+.botones .btn-primario {
+  background-color: #FB9300;
+}
+
+.Quien {
+  display: flex;
+  padding: 30px;
+  margin-top: 60px;
+  margin-bottom: 60px;
+  justify-content: center;
+  align-items: center;
+  margin: 40px;
+  background-color: #0A1D37;
+  box-shadow: 15px 4px 15px 0 #212121;
+  gap: 20px;
+}
+.Quien .nosotros-2 img {
+  width: 300px;
+  height: 400px;
+}
+.Quien .about-us h5 {
+  color: #ffffff;
+  text-align: center;
+}
+.Quien .about-us p {
+  color: #ffffff;
+  text-align: justify;
+}
+.Quien .nosotros img {
+  width: 300px;
+  height: 400px;
+}
+
+@media screen and (max-width: 980px) {
+  .Quien {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 30px;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    justify-content: center;
+    align-items: center;
+    background-color: #0A1D37;
+    gap: 20px;
+  }
+  .Quien .nosotros-2 img {
+    width: 300px;
+    height: 400px;
+  }
+  .Quien .about-us h5 {
+    color: #ffffff;
+    text-align: center;
+  }
+  .Quien .about-us p {
+    color: #ffffff;
+    text-align: justify;
+  }
+  .Quien .nosotros img {
+    width: 300px;
+    height: 400px;
+  }
+}

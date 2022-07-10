@@ -1,0 +1,235 @@
+@import "variables";
+
+.navbar{
+    background-color: #420516;
+    .container-fluid{
+        .navbar-toggler-icon{
+            color: $colorBlanco;
+        }
+        .navbar-brand{
+            color: #ffffff;
+        }
+        .navbar-brand{
+            color: $colorBlanco;
+        }
+        .collapse{
+            .navbar-nav{
+                .nav-item:hover{
+                    background-color: #FB9300;
+                    border-radius: 10px;
+                }
+                .nav-item{
+                    padding: 10px;
+                    border-radius: 10px;
+                    transition-property: background;
+                    transition-duration: 1s;
+                    .nav-link{
+                        color: $colorBlanco;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.cards{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    flex-wrap: wrap;
+    .card{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 200px;
+        padding:10px;
+        transition-property: all;
+        transition-duration: 1s;
+        cursor: pointer;
+        
+        
+        p{
+            text-align:center;
+        }
+    }
+    .card:hover{
+        background-color: #420516;
+        p{
+            color: $colorBlanco;
+        }
+    }
+}
+
+.ventaja{
+    background-color: #0A1D37;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+    box-shadow: 15px 4px 15px $colorRelleno;
+    .ventajas{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        padding: 40px;
+        transition: all 1s;
+        h3{
+            color: $colorBlanco;
+        }
+        p{
+            color: $colorBlanco;
+        }
+    }
+    
+}
+@media screen and (max-width:980px){
+    .ventaja{
+        background-color: #0A1D37;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-bottom: 50px;
+        .ventajas{
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            justify-content: center;
+            padding: 40px;
+            transition: all 1s;
+            h3{
+                color: $colorBlanco;
+            }
+            p{
+                color: $colorBlanco;
+            }
+        }
+        
+    }
+}
+
+.baner{
+    display: flex;
+    flex-direction: row-reverse;
+    background-color: #420516;
+    width: 100%;
+    height: 200px;
+    .redes{
+        a{
+            i{
+                color: #ffffff;
+            }
+            i:hover{
+                color: #FB9300;
+            }
+        }
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50%;
+        color: #ffffff;
+        gap: 10px;
+    }
+    .direccion{
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        justify-content: center;
+        align-items: center;
+        color: #ffffff;
+        i{
+            margin: 10px;
+        }
+    }
+}
+
+.botones{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .btn{
+        padding: map-get($btn , padding);
+        border: map-get($btn , border );
+        border-radius: map-get($btn ,  border );
+        margin:map-get($btn, margen )
+    }
+
+    .btn-primario{
+        @extend .btn;
+        background-color: #FB9300;
+    }
+}
+
+.Quien{
+    display: flex;
+    padding: 30px;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    justify-content: center;
+    align-items: center;
+    margin: 40px;
+    background-color: #0A1D37;
+    box-shadow: 15px 4px 15px 0 $colorRelleno;
+    gap: 20px;
+    .nosotros-2{
+        img{
+            width: 300px;
+            height: 400px;
+        }
+    }
+    .about-us{
+        h5{
+            color: #ffffff;
+            text-align: center;
+        }
+        p{
+            color: #ffffff;
+            text-align: justify;
+        }
+    }
+    .nosotros{
+        img{
+            width:300px;
+            height: 400px;
+        }
+    }
+}
+
+@media screen and (max-width:980px){
+    .Quien{
+        display: flex;
+        flex-wrap: wrap;
+        padding: 30px;
+        margin-top: 60px;
+        margin-bottom: 60px;
+        justify-content: center;
+        align-items: center;
+        background-color: #0A1D37;
+        gap: 20px;
+        .nosotros-2{
+            img{
+                width: 300px;
+                height: 400px;
+            }
+        }
+        .about-us{
+            h5{
+                color: #ffffff;
+                text-align: center;
+            }
+            p{
+                color: #ffffff;
+                text-align: justify;
+            }
+        }
+        .nosotros{
+            img{
+                width:300px;
+                height: 400px;
+            }
+        }
+    }
+}
