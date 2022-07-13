@@ -221,7 +221,6 @@
 .servicio .service .servicios h4 {
   color: #ffffff;
   font-size: xx-large;
-  font-size: 200px;
   text-align: center;
   transition: all 1s;
 }
@@ -231,10 +230,9 @@
 .servicio .service .opacity {
   background-color: #212121;
   background-size: cover;
-  border-radius: 10px;
   position: absolute;
   width: 100%;
-  height: 300px;
+  height: 50px;
   opacity: 54%;
 }
 .servicio .service .background {
@@ -244,4 +242,46 @@
   background-size: cover;
   width: 100%;
   height: 400px;
+}
+
+.list-serv {
+  margin-top: 60px;
+  margin-bottom: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.list-serv .list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+.list-serv .list .lista {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  gap: 10px;
+  width: 400px;
+  background-color: #420516;
+  border-radius: 10px;
+  transition: all 0.5s;
+}
+.list-serv .list .lista p {
+  color: #ffffff;
+}
+.list-serv .list .lista i {
+  display: flex;
+  margin-right: 10px;
+  color: #ffffff;
+}
+.list-serv .list .lista:hover {
+  background-color: #FB9300;
+}
+.list-serv .list .lista:hover i {
+  color: #420516;
+}
+.list-serv .list .lista:hover p {
+  color: #420516;
 }
