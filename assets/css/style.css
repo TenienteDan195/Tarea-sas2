@@ -285,3 +285,42 @@
 .list-serv .list .lista:hover p {
   color: #420516;
 }
+
+.principal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+}
+.principal .form {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #FB9300;
+  padding: 20px;
+  border-radius: 10px;
+}
+.principal .form .formulario {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+.principal .form .formulario textarea {
+  border-radius: 5px;
+  border-style: none;
+}
+.principal .form .formulario input {
+  border-radius: 5px;
+  border-style: none;
+  padding: 5px;
+}
+.principal .form .formulario p {
+  padding: 10px;
+}
+.principal .form .formulario p input {
+  padding: 10px;
+}
