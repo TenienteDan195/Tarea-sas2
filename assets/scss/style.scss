@@ -69,6 +69,11 @@
     align-items: center;
     margin-bottom: 50px;
     box-shadow: 15px 4px 15px $colorRelleno;
+    .img{
+        width: 100%;
+        img{
+            width: 100%;
+        }
     .ventajas{
         display: flex;
         flex-wrap: wrap;
@@ -76,6 +81,8 @@
         justify-content: center;
         padding: 40px;
         transition: all 1s;
+        
+        }
         h3{
             color: $colorBlanco;
         }
@@ -248,6 +255,7 @@
             display: flex;
             align-items: center;
             justify-content: center;
+
             h4{
                 color: $colorBlanco;
                 font-size: xx-large;
@@ -289,7 +297,8 @@
         flex-wrap: wrap;
         gap: 40px;
         .lista{
-            display: flex;
+            display: flex;     
+            flex-direction: column;      
             justify-content: center;
             align-items: center;
             padding: 10px;
@@ -298,8 +307,25 @@
             background-color: #420516;
             border-radius: 10px;
             transition: all 0.5s;
+            ul{
+                list-style: none;
+                li{
+                    list-style: circle;
+                    color: #ffffff;
+                }
+            }
+            h5{
+                color: #ffffff;
+            }
+
+            .opciones{
+                text-align: left;
+            }
             
-            p{
+            p{  
+                text-align: center;
+                font-weight: 500;
+                font-size:20px;
                 color: #ffffff;
             }
             i{
@@ -315,6 +341,9 @@
                 color: #420516;
             }
             p{
+                color: #420516;
+            }
+            h5{
                 color: #420516;
             }
         }

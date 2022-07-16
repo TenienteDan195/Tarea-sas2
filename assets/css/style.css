@@ -60,7 +60,13 @@
   margin-bottom: 50px;
   box-shadow: 15px 4px 15px #212121;
 }
-.ventaja .ventajas {
+.ventaja .img {
+  width: 100%;
+}
+.ventaja .img img {
+  width: 100%;
+}
+.ventaja .img .ventajas {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
@@ -68,10 +74,10 @@
   padding: 40px;
   transition: all 1s;
 }
-.ventaja .ventajas h3 {
+.ventaja .img h3 {
   color: #ffffff;
 }
-.ventaja .ventajas p {
+.ventaja .img p {
   color: #ffffff;
 }
 
@@ -259,6 +265,7 @@
 }
 .list-serv .list .lista {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 10px;
@@ -268,7 +275,23 @@
   border-radius: 10px;
   transition: all 0.5s;
 }
+.list-serv .list .lista ul {
+  list-style: none;
+}
+.list-serv .list .lista ul li {
+  list-style: circle;
+  color: #ffffff;
+}
+.list-serv .list .lista h5 {
+  color: #ffffff;
+}
+.list-serv .list .lista .opciones {
+  text-align: left;
+}
 .list-serv .list .lista p {
+  text-align: center;
+  font-weight: 500;
+  font-size: 20px;
   color: #ffffff;
 }
 .list-serv .list .lista i {
@@ -283,6 +306,9 @@
   color: #420516;
 }
 .list-serv .list .lista:hover p {
+  color: #420516;
+}
+.list-serv .list .lista:hover h5 {
   color: #420516;
 }
 
