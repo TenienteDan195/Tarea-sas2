@@ -165,8 +165,53 @@
   width: 300px;
   height: 400px;
 }
+.Quien .about-us-2 p {
+  color: #ffffff;
+}
+.Quien .about-us-2 h5 {
+  color: #ffffff;
+}
 
-@media screen and (max-width: 980px) {
+.mavi {
+  background-color: #FB9300;
+  margin: 30px;
+  padding: 20px;
+  border-radius: 5px;
+  display: flex;
+  gap: 20px;
+}
+.mavi .vision {
+  width: 33.3%;
+}
+.mavi .vision .titulo {
+  padding: 20px;
+  text-align: center;
+}
+.mavi .vision p {
+  text-align: justify;
+}
+.mavi .mision {
+  width: 33.3%;
+}
+.mavi .mision .titulo {
+  padding: 20px;
+  text-align: center;
+}
+.mavi .mision p {
+  text-align: justify;
+}
+.mavi .objetivo {
+  width: 33.3%;
+}
+.mavi .objetivo .titulo {
+  padding: 20px;
+  text-align: center;
+}
+.mavi .objetivo p {
+  text-align: justify;
+}
+
+@media screen and (max-width: 1180px) {
   .Quien {
     display: flex;
     flex-wrap: wrap;
