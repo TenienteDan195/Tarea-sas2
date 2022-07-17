@@ -202,16 +202,21 @@
     padding: 20px;
     border-radius: 5px;
     display: flex;
-
-    gap: 20px;
+    flex-direction: row;
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
     .vision{
         width:33.3%;
         .titulo{
             padding: 20px;
             text-align: center;
+            font-size: 30px;
         }
         p{
             text-align: justify;
+            font-size: medium;
+            font-weight: 700;
         }
     }
     .mision{
@@ -219,9 +224,12 @@
         .titulo{
             padding: 20px;
             text-align: center;
+            font-size: 30px;
         }
         p{
             text-align: justify;
+            font-size: medium;
+            font-weight: 700;
         }
     }
     .objetivo{
@@ -229,9 +237,12 @@
         .titulo{
             padding: 20px;
             text-align: center;
+            font-size: 30px;
         }
         p{
             text-align: justify;
+            font-size: medium;
+            font-weight: 700;
         }
     }
 }
@@ -270,6 +281,48 @@
             }
         }
         
+    }
+    .mavi{
+        width: 100%;
+        background-color:#FB9300;
+        margin: 30px;
+        padding: 20px;
+        border-radius: 5px;
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        justify-content: center;
+        align-items: center;
+        .vision{
+            width:33.3%;
+            .titulo{
+                padding: 20px;
+                text-align: center;
+            }
+            p{
+                text-align: justify;
+            }
+        }
+        .mision{
+            width: 33.3%;
+            .titulo{
+                padding: 20px;
+                text-align: center;
+            }
+            p{
+                text-align: justify;
+            }
+        }
+        .objetivo{
+            width: 33.3%;
+            .titulo{
+                padding: 20px;
+                text-align: center;
+            }
+            p{
+                text-align: justify;
+            }
+        }
     }
     
 }

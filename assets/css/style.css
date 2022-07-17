@@ -178,7 +178,10 @@
   padding: 20px;
   border-radius: 5px;
   display: flex;
-  gap: 20px;
+  flex-direction: row;
+  gap: 40px;
+  justify-content: center;
+  align-items: center;
 }
 .mavi .vision {
   width: 33.3%;
@@ -186,9 +189,12 @@
 .mavi .vision .titulo {
   padding: 20px;
   text-align: center;
+  font-size: 30px;
 }
 .mavi .vision p {
   text-align: justify;
+  font-size: medium;
+  font-weight: 700;
 }
 .mavi .mision {
   width: 33.3%;
@@ -196,9 +202,12 @@
 .mavi .mision .titulo {
   padding: 20px;
   text-align: center;
+  font-size: 30px;
 }
 .mavi .mision p {
   text-align: justify;
+  font-size: medium;
+  font-weight: 700;
 }
 .mavi .objetivo {
   width: 33.3%;
@@ -206,9 +215,12 @@
 .mavi .objetivo .titulo {
   padding: 20px;
   text-align: center;
+  font-size: 30px;
 }
 .mavi .objetivo p {
   text-align: justify;
+  font-size: medium;
+  font-weight: 700;
 }
 
 @media screen and (max-width: 1180px) {
@@ -238,6 +250,48 @@
   .Quien .nosotros img {
     width: 300px;
     height: 400px;
+  }
+  .mavi {
+    width: 100%;
+    background-color: #FB9300;
+    margin: 30px;
+    padding: 20px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+  }
+  .mavi .vision {
+    width: 33.3%;
+  }
+  .mavi .vision .titulo {
+    padding: 20px;
+    text-align: center;
+  }
+  .mavi .vision p {
+    text-align: justify;
+  }
+  .mavi .mision {
+    width: 33.3%;
+  }
+  .mavi .mision .titulo {
+    padding: 20px;
+    text-align: center;
+  }
+  .mavi .mision p {
+    text-align: justify;
+  }
+  .mavi .objetivo {
+    width: 33.3%;
+  }
+  .mavi .objetivo .titulo {
+    padding: 20px;
+    text-align: center;
+  }
+  .mavi .objetivo p {
+    text-align: justify;
   }
 }
 .servicio .service {
