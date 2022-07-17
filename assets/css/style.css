@@ -52,35 +52,6 @@
   color: #ffffff;
 }
 
-.ventaja {
-  background-color: #0A1D37;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 50px;
-  box-shadow: 15px 4px 15px #212121;
-}
-.ventaja .img {
-  width: 100%;
-}
-.ventaja .img img {
-  width: 100%;
-}
-.ventaja .img .ventajas {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  justify-content: center;
-  padding: 40px;
-  transition: all 1s;
-}
-.ventaja .img h3 {
-  color: #ffffff;
-}
-.ventaja .img p {
-  color: #ffffff;
-}
-
 @media screen and (max-width: 980px) {
   .ventaja {
     background-color: #0A1D37;
@@ -104,6 +75,35 @@
     color: #ffffff;
   }
 }
+.ventaja {
+  background-color: #0A1D37;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+  box-shadow: 15px 4px 15px #212121;
+}
+.ventaja .img {
+  width: 100%;
+}
+.ventaja .img img {
+  width: 100%;
+}
+.ventaja .ventajas {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  padding: 40px;
+  transition: all 1s;
+}
+.ventaja h3 {
+  color: #ffffff;
+}
+.ventaja p {
+  color: #ffffff;
+}
+
 .baner {
   display: flex;
   flex-direction: row-reverse;
@@ -135,21 +135,6 @@
 }
 .baner .direccion i {
   margin: 10px;
-}
-
-.botones {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.botones .btn, .botones .btn-primario {
-  padding: 5px 15px;
-  border: 0;
-  border-radius: 0;
-  margin: 8px;
-}
-.botones .btn-primario {
-  background-color: #FB9300;
 }
 
 .Quien {
@@ -251,6 +236,7 @@
 }
 
 .list-serv {
+  flex-direction: column;
   margin-top: 60px;
   margin-bottom: 60px;
   display: flex;
@@ -272,6 +258,7 @@
   gap: 10px;
   width: 400px;
   background-color: #420516;
+  box-shadow: 5px 0 5px;
   border-radius: 10px;
   transition: all 0.5s;
 }
@@ -311,6 +298,23 @@
 .list-serv .list .lista:hover h5 {
   color: #420516;
 }
+.list-serv .how-service {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 0 0 0;
+}
+.list-serv .how-service .ser {
+  background-color: #0A1D37;
+  padding: 30px;
+  width: 100%;
+}
+.list-serv .how-service .ser p {
+  font-size: 20px;
+  text-align: justify;
+  color: #FB9300;
+}
 
 @media screen and (max-width: 950px) {
   .principal {
@@ -324,22 +328,34 @@
 }
 .principal {
   display: flex;
-  width: 100%;
   justify-content: center;
+  flex-direction: column;
+  width: 100%;
   align-items: center;
   padding: 30px;
-  background-color: #0A1D37;
-  margin: 80px 0 80px 0;
-  box-shadow: 15px 0 15px 4px;
 }
 .principal .form {
   width: 25%;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+  gap: 30px;
+  flex-wrap: wrap;
   padding: 15px;
   border-radius: 10px;
+}
+.principal .form .direccion {
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+  background-color: #FB9300;
+  padding: 20px;
+}
+.principal .form .direccion p {
+  font-family: sans-serif;
+  font-weight: 800;
+  font-size: 15px;
 }
 .principal .form .formulario {
   display: flex;
@@ -351,6 +367,7 @@
   border-radius: 5px;
   background-color: #FB9300;
   gap: 5px;
+  transition: all 0.5s;
 }
 .principal .form .formulario textarea {
   border-radius: 5px;
@@ -368,9 +385,30 @@
 .principal .form .formulario p input {
   padding: 10px;
 }
+.principal .formulario:hover {
+  background-color: #0A1D37;
+}
+.principal .formulario:hover h4 {
+  color: #ffffff;
+}
+.principal .formulario:hover p {
+  color: #ffffff;
+}
 .principal .contacto {
+  width: 100%;
+  background-color: #0A1D37;
+  border-radius: 5px;
+  padding: 40px;
   margin: 30px;
+  transition: all 0.5s;
 }
 .principal .contacto p {
   color: #ffffff;
+  text-align: left;
+}
+.principal .contacto:hover {
+  background-color: #FB9300;
+}
+.principal .contacto:hover p {
+  color: #0A1D37;
 }
