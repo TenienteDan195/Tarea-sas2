@@ -26,11 +26,15 @@
 
 .imagen {
   position: absolute;
+  display: flex;
+  width: 100%;
+  height: 600px;
+  justify-content: center;
+  align-items: center;
 }
 .imagen img {
-  position: absolute;
-  width: 600px;
-  height: 150px;
+  width: 350px;
+  height: 100px;
 }
 
 .container {
@@ -40,13 +44,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-}
-.container .opac {
-  position: absolute;
-  opacity: 30%;
-  background-color: #212121;
-  width: 100%;
-  height: 600px;
 }
 
 .cards {
