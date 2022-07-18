@@ -124,40 +124,32 @@
 }
 .ventaja p {
   color: #ffffff;
+  text-align: justify;
 }
 
 .baner {
   display: flex;
-  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
   background-color: #420516;
   width: 100%;
-  height: 200px;
 }
 .baner .redes {
+  margin: 30px;
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
   width: 50%;
   color: #ffffff;
   gap: 10px;
 }
 .baner .redes a i {
+  width: 20px;
   color: #ffffff;
 }
 .baner .redes a i:hover {
   color: #FB9300;
-}
-.baner .direccion {
-  display: flex;
-  flex-direction: column;
-  width: 50%;
-  justify-content: center;
-  align-items: center;
-  color: #ffffff;
-}
-.baner .direccion i {
-  margin: 10px;
 }
 
 .Quien {
@@ -190,9 +182,11 @@
 }
 .Quien .about-us-2 p {
   color: #ffffff;
+  text-align: justify;
 }
 .Quien .about-us-2 h5 {
   color: #ffffff;
+  text-align: center;
 }
 
 .mavi {
@@ -275,19 +269,19 @@
     height: 400px;
   }
   .mavi {
-    width: 100%;
     background-color: #FB9300;
-    margin: 30px;
-    padding: 20px;
+    margin-top: 30px;
+    padding: 5px;
     border-radius: 5px;
     display: flex;
     flex-direction: column;
-    gap: 40px;
+    gap: 10px;
     justify-content: center;
     align-items: center;
   }
   .mavi .vision {
-    width: 33.3%;
+    width: 100%;
+    padding: 10%;
   }
   .mavi .vision .titulo {
     padding: 20px;
@@ -297,17 +291,26 @@
     text-align: justify;
   }
   .mavi .mision {
-    width: 33.3%;
+    padding: 80px;
+    width: 100%;
   }
   .mavi .mision .titulo {
-    padding: 20px;
+    padding: 60px;
     text-align: center;
   }
   .mavi .mision p {
     text-align: justify;
   }
+}
+@media screen and (max-width: 1180px) and (max-width: 650px) {
+  .mavi .mision {
+    padding: 50px;
+  }
+}
+@media screen and (max-width: 1180px) {
   .mavi .objetivo {
-    width: 33.3%;
+    width: 100%;
+    padding: 10%;
   }
   .mavi .objetivo .titulo {
     padding: 20px;
@@ -441,9 +444,12 @@
 @media screen and (max-width: 950px) {
   .principal {
     display: flex;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
   }
   .principal .form {
+    display: flex;
     width: 100%;
     height: 100%;
   }
@@ -457,7 +463,7 @@
   padding: 30px;
 }
 .principal .form {
-  width: 25%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
